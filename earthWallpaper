@@ -3,4 +3,6 @@ curl -s https://cdn.star.nesdis.noaa.gov/GOES16/ABI/FD/GEOCOLOR/1808x1808.jpg > 
 mv ~/Downloads/tempEarth.jpg $1
 GIO_EXTRA_MODULES="/usr/lib/x86_64-linux-gnu/gio/modules/"
 export GIO_EXTRA_MODULES
+gsettings set org.gnome.desktop.background picture-options 'scaled'
 gsettings set org.gnome.desktop.background picture-uri file://$1
+
